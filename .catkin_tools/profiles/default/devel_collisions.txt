@@ -1,1 +1,0 @@
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/./cmake.lock 2
