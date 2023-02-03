@@ -1,1 +1,0 @@
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/share/normal_lidar_odometry/cmake/normal_lidar_odometryConfig.cmake
