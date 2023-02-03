@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/icp/eigen_icp_2d.cpp" "/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/icp.dir/src/icp/eigen_icp_2d.cpp.o"
+  "/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/icp/eigen_icp_2d.cpp" "/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/icp.dir/src/icp/eigen_icp_2d.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,7 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp"
+  "/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp"
   "/usr/include/eigen3"
   )
 

@@ -1,9 +1,0 @@
-Symlinking /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libnormal_tracker.so
-Symlinking /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libicp.so
-Symlinking /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libros_bridge.so
-Symlinking /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libnicp.so
-Symlinking /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libtracker.so
-Symlinking /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/pkgconfig/normal_lidar_odometry.pc
-Symlinking /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node
-Symlinking /home/mf/Scrivania/2d_normal_lidar_odom/devel/share/normal_lidar_odometry/cmake/normal_lidar_odometryConfig.cmake
-Symlinking /home/mf/Scrivania/2d_normal_lidar_odom/devel/share/normal_lidar_odometry/cmake/normal_lidar_odometryConfig-version.cmake

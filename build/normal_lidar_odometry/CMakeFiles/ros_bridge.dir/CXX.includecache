@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/ros_bridge.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/ros_bridge.h
 geometry_msgs/TransformStamped.h
 -
 nav_msgs/Odometry.h
@@ -18,9 +18,9 @@ Eigen/Dense
 vector
 -
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/ros_bridge.cpp
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/ros_bridge.cpp
 ros_bridge.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/ros_bridge.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/ros_bridge.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

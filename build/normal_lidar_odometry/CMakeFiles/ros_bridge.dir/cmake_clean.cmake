@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libros_bridge.pdb"
-  "/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libros_bridge.so"
+  "/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libros_bridge.pdb"
+  "/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libros_bridge.so"
   "CMakeFiles/ros_bridge.dir/src/ros_bridge.cpp.o"
 )
 

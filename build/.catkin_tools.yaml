@@ -1,0 +1,6 @@
+devel_space: /home/mf/Scrivania/2d_normal_lidar_odom/devel
+install: false
+install_space: /home/mf/Scrivania/2d_normal_lidar_odom/install
+profile: default
+source_space: /home/mf/Scrivania/2d_normal_lidar_odom/src
+workspace: /home/mf/Scrivania/2d_normal_lidar_odom

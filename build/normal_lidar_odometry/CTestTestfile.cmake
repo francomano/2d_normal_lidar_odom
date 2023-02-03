@@ -1,5 +1,5 @@
 # CMake generated Testfile for 
-# Source directory: /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom
+# Source directory: /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise
 # Build directory: /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry
 # 
 # This file includes the relevant testing commands required for 

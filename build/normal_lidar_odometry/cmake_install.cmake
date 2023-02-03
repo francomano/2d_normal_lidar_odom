@@ -1,4 +1,4 @@
-# Install script for directory: /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom
+# Install script for directory: /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -145,7 +145,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/normal_lidar_odometry" TYPE FILE FILES "/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/normal_lidar_odometry" TYPE FILE FILES "/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

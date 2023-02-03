@@ -6,49 +6,49 @@
 
 #IncludeRegexTransform: 
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp/brute_force_search.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp/brute_force_search.h
 vector
 -
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp/eigen_covariance.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp/eigen_covariance.h
 Eigen/Core
 -
 Eigen/Eigenvalues
 -
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp/eigen_icp_2d.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp/eigen_icp_2d.h
 Eigen/Geometry
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp/Eigen/Geometry
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp/Eigen/Geometry
 eigen_kdtree.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp/eigen_kdtree.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp/eigen_kdtree.h
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp/eigen_kdtree.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp/eigen_kdtree.h
 memory
 -
 split.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp/split.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp/split.h
 eigen_covariance.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp/eigen_covariance.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp/eigen_covariance.h
 brute_force_search.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp/brute_force_search.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp/brute_force_search.h
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp/rotations.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp/rotations.h
 Eigen/Core
 -
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/icp/split.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/icp/split.h
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/icp/eigen_icp_2d.cpp
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/icp/eigen_icp_2d.cpp
 eigen_icp_2d.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/icp/eigen_icp_2d.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/icp/eigen_icp_2d.h
 iostream
 -
 Eigen/Cholesky
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/icp/Eigen/Cholesky
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/icp/Eigen/Cholesky
 Eigen/Geometry
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/icp/Eigen/Geometry
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/icp/Eigen/Geometry
 rotations.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/icp/rotations.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/icp/rotations.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

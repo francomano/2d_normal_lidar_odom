@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom
+CMAKE_SOURCE_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry
@@ -95,6 +95,6 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 
 gtest/googlemock/CMakeFiles/gmock_main.dir/depend:
-	cd /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom /usr/src/googletest/googlemock /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/gtest/googlemock /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/gtest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise /usr/src/googletest/googlemock /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/gtest/googlemock /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/gtest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 

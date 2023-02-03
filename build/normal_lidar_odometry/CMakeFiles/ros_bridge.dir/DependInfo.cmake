@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/ros_bridge.cpp" "/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/ros_bridge.dir/src/ros_bridge.cpp.o"
+  "/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/ros_bridge.cpp" "/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/ros_bridge.dir/src/ros_bridge.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,7 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include"
+  "/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include"
   "/usr/include/eigen3"
   )
 

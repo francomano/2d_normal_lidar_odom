@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom
+CMAKE_SOURCE_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry
@@ -58,30 +58,30 @@ include CMakeFiles/nicp.dir/progress.make
 include CMakeFiles/nicp.dir/flags.make
 
 CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.o: CMakeFiles/nicp.dir/flags.make
-CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.o: /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/nicp/eigen_nicp_2d.cpp
+CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.o: /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/eigen_nicp_2d.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.o -c /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/nicp/eigen_nicp_2d.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.o -c /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/eigen_nicp_2d.cpp
 
 CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/nicp/eigen_nicp_2d.cpp > CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/eigen_nicp_2d.cpp > CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.i
 
 CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/nicp/eigen_nicp_2d.cpp -o CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/eigen_nicp_2d.cpp -o CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.s
 
 CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.o: CMakeFiles/nicp.dir/flags.make
-CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.o: /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/nicp/normal_estimator.cpp
+CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.o: /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/normal_estimator.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.o -c /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/nicp/normal_estimator.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.o -c /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/normal_estimator.cpp
 
 CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/nicp/normal_estimator.cpp > CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/normal_estimator.cpp > CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.i
 
 CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/src/nicp/normal_estimator.cpp -o CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/normal_estimator.cpp -o CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.s
 
 # Object files for target nicp
 nicp_OBJECTS = \
@@ -91,16 +91,16 @@ nicp_OBJECTS = \
 # External object files for target nicp
 nicp_EXTERNAL_OBJECTS =
 
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libnicp.so: CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.o
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libnicp.so: CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.o
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libnicp.so: CMakeFiles/nicp.dir/build.make
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libnicp.so: /home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libicp.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libnicp.so: CMakeFiles/nicp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libnicp.so"
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libnicp.so: CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.o
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libnicp.so: CMakeFiles/nicp.dir/src/nicp/normal_estimator.cpp.o
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libnicp.so: CMakeFiles/nicp.dir/build.make
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libnicp.so: /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libicp.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libnicp.so: CMakeFiles/nicp.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libnicp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nicp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/nicp.dir/build: /home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libnicp.so
+CMakeFiles/nicp.dir/build: /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libnicp.so
 
 .PHONY : CMakeFiles/nicp.dir/build
 
@@ -109,6 +109,6 @@ CMakeFiles/nicp.dir/clean:
 .PHONY : CMakeFiles/nicp.dir/clean
 
 CMakeFiles/nicp.dir/depend:
-	cd /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/nicp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/nicp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/nicp.dir/depend
 

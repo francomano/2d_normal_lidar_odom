@@ -67,8 +67,8 @@ set(normal_lidar_odometry_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(normal_lidar_odometry_SOURCE_PREFIX /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom)
-  set(normal_lidar_odometry_DEVEL_PREFIX /home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry)
+  set(normal_lidar_odometry_SOURCE_PREFIX /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise)
+  set(normal_lidar_odometry_DEVEL_PREFIX /home/mf/Scrivania/2d_normal_lidar_odom/devel)
   set(normal_lidar_odometry_INSTALL_PREFIX "")
   set(normal_lidar_odometry_PREFIX ${normal_lidar_odometry_DEVEL_PREFIX})
 else()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/mf/Scrivania/2d_normal_lidar_odom/install/lib;/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/mf/Scrivania/2d_normal_lidar_odom/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -44,7 +44,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom
+CMAKE_SOURCE_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry

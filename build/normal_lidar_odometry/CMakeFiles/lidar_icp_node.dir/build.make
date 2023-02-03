@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom
+CMAKE_SOURCE_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry
@@ -58,17 +58,17 @@ include CMakeFiles/lidar_icp_node.dir/progress.make
 include CMakeFiles/lidar_icp_node.dir/flags.make
 
 CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.o: CMakeFiles/lidar_icp_node.dir/flags.make
-CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.o: /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/bin/lidar_icp_node.cpp
+CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.o: /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/lidar_icp_node.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.o -c /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/bin/lidar_icp_node.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.o -c /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/lidar_icp_node.cpp
 
 CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/bin/lidar_icp_node.cpp > CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/lidar_icp_node.cpp > CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.i
 
 CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/bin/lidar_icp_node.cpp -o CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/lidar_icp_node.cpp -o CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.s
 
 # Object files for target lidar_icp_node
 lidar_icp_node_OBJECTS = \
@@ -77,38 +77,38 @@ lidar_icp_node_OBJECTS = \
 # External object files for target lidar_icp_node
 lidar_icp_node_EXTERNAL_OBJECTS =
 
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.o
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: CMakeFiles/lidar_icp_node.dir/build.make
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libtracker.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libros_bridge.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libtf2_ros.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libactionlib.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libmessage_filters.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libroscpp.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/librosconsole.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libtf2.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/librostime.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libcpp_common.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: /home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libicp.so
-/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node: CMakeFiles/lidar_icp_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node"
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.o
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: CMakeFiles/lidar_icp_node.dir/build.make
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libtracker.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libros_bridge.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libtf2_ros.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libactionlib.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libmessage_filters.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libroscpp.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/librosconsole.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libtf2.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/librostime.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libicp.so
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node: CMakeFiles/lidar_icp_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lidar_icp_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/lidar_icp_node.dir/build: /home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/normal_lidar_odometry/lidar_icp_node
+CMakeFiles/lidar_icp_node.dir/build: /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_icp_node
 
 .PHONY : CMakeFiles/lidar_icp_node.dir/build
 
@@ -117,6 +117,6 @@ CMakeFiles/lidar_icp_node.dir/clean:
 .PHONY : CMakeFiles/lidar_icp_node.dir/clean
 
 CMakeFiles/lidar_icp_node.dir/depend:
-	cd /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom /home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/lidar_icp_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/lidar_icp_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lidar_icp_node.dir/depend
 

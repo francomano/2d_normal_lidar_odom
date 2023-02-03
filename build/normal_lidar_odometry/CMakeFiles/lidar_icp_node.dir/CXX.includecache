@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/bin/lidar_icp_node.cpp
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/lidar_icp_node.cpp
 geometry_msgs/TransformStamped.h
 -
 nav_msgs/Odometry.h
@@ -20,19 +20,19 @@ sensor_msgs/LaserScan.h
 tf2_ros/transform_broadcaster.h
 -
 constants.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/bin/constants.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/constants.h
 normal_tracker.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/bin/normal_tracker.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/normal_tracker.h
 ros_bridge.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/bin/ros_bridge.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/ros_bridge.h
 tracker.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/bin/tracker.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/tracker.h
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/constants.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/constants.h
 string
 -
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/normal_tracker.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/normal_tracker.h
 ros/ros.h
 -
 tf2_ros/transform_broadcaster.h
@@ -40,7 +40,7 @@ tf2_ros/transform_broadcaster.h
 Eigen/Dense
 -
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/ros_bridge.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/ros_bridge.h
 geometry_msgs/TransformStamped.h
 -
 nav_msgs/Odometry.h
@@ -52,7 +52,7 @@ Eigen/Dense
 vector
 -
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/normal_lidar_odom/include/tracker.h
+/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/tracker.h
 ros/ros.h
 -
 tf2_ros/transform_broadcaster.h
