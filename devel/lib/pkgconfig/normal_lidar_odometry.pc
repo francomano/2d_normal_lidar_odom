@@ -1,0 +1,1 @@
+/home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/pkgconfig/normal_lidar_odometry.pc

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libicp.so -o /home/mf/Scrivania/2d_normal_lidar_odom/devel/.private/normal_lidar_odometry/lib/libicp.so CMakeFiles/icp.dir/src/icp/eigen_icp_2d.cpp.o 
