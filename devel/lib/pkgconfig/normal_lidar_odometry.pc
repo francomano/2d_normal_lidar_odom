@@ -1,0 +1,8 @@
+prefix=/home/mf/Scrivania/2d_normal_lidar_odom/devel
+
+Name: normal_lidar_odometry
+Description: Description of normal_lidar_odometry
+Version: 1.0.0
+Cflags: -I/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs nav_msgs geometry_msgs visualization_msgs tf2 tf2_ros
