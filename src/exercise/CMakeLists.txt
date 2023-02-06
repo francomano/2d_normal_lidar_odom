@@ -55,3 +55,5 @@ add_executable(lidar_icp_node bin/lidar_icp_node.cpp)
 target_link_libraries(lidar_icp_node PRIVATE tracker ros_bridge)
 
 # Add compilation rules for lidar_nicp_node
+add_executable(lidar_nicp_node bin/lidar_nicp_node.cpp)
+target_link_libraries(lidar_nicp_node PRIVATE normal_tracker ros_bridge)

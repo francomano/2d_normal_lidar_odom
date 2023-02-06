@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named lidar_nicp_node
+
+# Build rule for target.
+lidar_nicp_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lidar_nicp_node
+.PHONY : lidar_nicp_node
+
+# fast build rule for target.
+lidar_nicp_node/fast:
+	$(MAKE) -f CMakeFiles/lidar_nicp_node.dir/build.make CMakeFiles/lidar_nicp_node.dir/build
+.PHONY : lidar_nicp_node/fast
+
+#=============================================================================
 # Target rules for targets named lidar_icp_node
 
 # Build rule for target.
@@ -1039,6 +1052,33 @@ bin/lidar_icp_node.cpp.s:
 	$(MAKE) -f CMakeFiles/lidar_icp_node.dir/build.make CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.s
 .PHONY : bin/lidar_icp_node.cpp.s
 
+bin/lidar_nicp_node.o: bin/lidar_nicp_node.cpp.o
+
+.PHONY : bin/lidar_nicp_node.o
+
+# target to build an object file
+bin/lidar_nicp_node.cpp.o:
+	$(MAKE) -f CMakeFiles/lidar_nicp_node.dir/build.make CMakeFiles/lidar_nicp_node.dir/bin/lidar_nicp_node.cpp.o
+.PHONY : bin/lidar_nicp_node.cpp.o
+
+bin/lidar_nicp_node.i: bin/lidar_nicp_node.cpp.i
+
+.PHONY : bin/lidar_nicp_node.i
+
+# target to preprocess a source file
+bin/lidar_nicp_node.cpp.i:
+	$(MAKE) -f CMakeFiles/lidar_nicp_node.dir/build.make CMakeFiles/lidar_nicp_node.dir/bin/lidar_nicp_node.cpp.i
+.PHONY : bin/lidar_nicp_node.cpp.i
+
+bin/lidar_nicp_node.s: bin/lidar_nicp_node.cpp.s
+
+.PHONY : bin/lidar_nicp_node.s
+
+# target to generate assembly for a file
+bin/lidar_nicp_node.cpp.s:
+	$(MAKE) -f CMakeFiles/lidar_nicp_node.dir/build.make CMakeFiles/lidar_nicp_node.dir/bin/lidar_nicp_node.cpp.s
+.PHONY : bin/lidar_nicp_node.cpp.s
+
 src/icp/eigen_icp_2d.o: src/icp/eigen_icp_2d.cpp.o
 
 .PHONY : src/icp/eigen_icp_2d.o
@@ -1210,6 +1250,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... lidar_nicp_node"
 	@echo "... lidar_icp_node"
 	@echo "... normal_tracker"
 	@echo "... geometry_msgs_generate_messages_eus"
@@ -1282,6 +1323,9 @@ help:
 	@echo "... bin/lidar_icp_node.o"
 	@echo "... bin/lidar_icp_node.i"
 	@echo "... bin/lidar_icp_node.s"
+	@echo "... bin/lidar_nicp_node.o"
+	@echo "... bin/lidar_nicp_node.i"
+	@echo "... bin/lidar_nicp_node.s"
 	@echo "... src/icp/eigen_icp_2d.o"
 	@echo "... src/icp/eigen_icp_2d.i"
 	@echo "... src/icp/eigen_icp_2d.s"

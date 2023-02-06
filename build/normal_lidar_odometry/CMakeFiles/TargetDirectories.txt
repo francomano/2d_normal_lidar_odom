@@ -1,6 +1,7 @@
 /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/install/strip.dir
 /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/list_install_components.dir
 /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/rebuild_cache.dir
+/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/lidar_nicp_node.dir
 /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/lidar_icp_node.dir
 /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/normal_tracker.dir
 /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles/geometry_msgs_generate_messages_eus.dir

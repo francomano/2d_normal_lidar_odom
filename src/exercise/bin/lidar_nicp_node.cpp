@@ -26,14 +26,15 @@ int main(int argc, char** argv) {
 
   // TODO: Create a new NormalScanTracker
   // tracker_ptr = ...;
-
+  tracker_ptr = std::make_shared<NormalScanTracker>(nh, FRAME_LASER, TOPIC_ODOM,2.0,0.5);
   // TODO: Subscribe to the topic scan and register scan_callback as message
+  ros::Subscriber scan_subscriber = nh.subscribe(TOPIC_SCAN, 10, scan_callback);
   // callback
 
   ROS_INFO("Node started. Waiting for scans.");
 
   // Spin the node
-
+  ros::spin();
   return 0;
 }
 
@@ -45,7 +46,7 @@ void scan_callback(const sensor_msgs::LaserScan::ConstPtr& msg_) {
   // Augment scan with normals computed by the NormalEstimator
   std::vector<Eigen::Vector4f, Eigen::aligned_allocator<Eigen::Vector4f>>
       scan_normals;
-  NormalEstimator ne(scan, 10);
+  NormalEstimator ne(scan, 10); //the NormalTracker receives an augmented scan with normals
   ne.get(scan_normals);
 
   if (!tracker_ptr) {

@@ -1,0 +1,12 @@
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:[m[K In member function ‘[01m[KEigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(Eigen::Isometry2f)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:48:58:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KEigen::Transform<float, 2, 1>::LinearPart[m[K’ {aka ‘[01m[KEigen::Block<Eigen::Matrix<float, 3, 3>, 2, 2, false>[m[K’} to non-scalar type ‘[01m[KEigen::Isometry2f[m[K’ {aka ‘[01m[KEigen::Transform<float, 2, 1>[m[K’} requested
+   48 |     Eigen::Isometry2f linear=[01;31m[K_X_moving_in_keyframe.linear()[m[K;
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:49:32:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Klinear[m[K’ from ‘[01m[KEigen::Isometry2f[m[K’ {aka ‘[01m[KEigen::Transform<float, 2, 1>[m[K’} to ‘[01m[KEigen::Matrix2d[m[K’ {aka ‘[01m[KEigen::Matrix<double, 2, 2>[m[K’}
+   49 |     float delta_r = angleFromR([01;31m[Klinear[m[K);
+      |                                [01;31m[K^~~~~~[m[K
+      |                                [01;31m[K|[m[K
+      |                                [01;31m[KEigen::Isometry2f {aka Eigen::Transform<float, 2, 1>}[m[K
+make[2]: *** [CMakeFiles/normal_tracker.dir/build.make:63: CMakeFiles/normal_tracker.dir/src/normal_tracker.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/normal_tracker.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

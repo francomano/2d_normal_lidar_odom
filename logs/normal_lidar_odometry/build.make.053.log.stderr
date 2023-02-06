@@ -1,0 +1,9 @@
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:[m[K In member function ‘[01m[Kvoid NormalScanTracker::publishState(ros::Time)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:132:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_Keyframe[m[K’ was not declared in this scope; did you mean ‘[01m[KpublishKeyframe[m[K’?
+  132 |   [01;31m[Kpublish_Keyframe[m[K(_X_keyframe_in_map);
+      |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |   [32m[KpublishKeyframe[m[K
+make[2]: *** [CMakeFiles/normal_tracker.dir/build.make:63: CMakeFiles/normal_tracker.dir/src/normal_tracker.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:263: CMakeFiles/normal_tracker.dir/all] Errore 2
+make[1]: *** Attesa per i processi non terminati....
+make: *** [Makefile:141: all] Errore 2

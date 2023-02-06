@@ -42,14 +42,6 @@ list
 icp/eigen_kdtree.h
 /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/nicp/icp/eigen_kdtree.h
 
-/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/nicp/normal_estimator.h
-Eigen/Dense
--
-vector
--
-icp/eigen_kdtree.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/nicp/icp/eigen_kdtree.h
-
 /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/eigen_nicp_2d.cpp
 eigen_nicp_2d.h
 /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/eigen_nicp_2d.h
@@ -61,12 +53,6 @@ iostream
 -
 icp/rotations.h
 /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/icp/rotations.h
-
-/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/normal_estimator.cpp
-normal_estimator.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/normal_estimator.h
-icp/eigen_covariance.h
-/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/icp/eigen_covariance.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core
@@ -435,22 +421,6 @@ src/Core/GlobalFunctions.h
 /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
-
-/usr/include/eigen3/Eigen/Dense
-Core
-/usr/include/eigen3/Eigen/Core
-LU
-/usr/include/eigen3/Eigen/LU
-Cholesky
-/usr/include/eigen3/Eigen/Cholesky
-QR
-/usr/include/eigen3/Eigen/QR
-SVD
-/usr/include/eigen3/Eigen/SVD
-Geometry
-/usr/include/eigen3/Eigen/Geometry
-Eigenvalues
-/usr/include/eigen3/Eigen/Eigenvalues
 
 /usr/include/eigen3/Eigen/Eigenvalues
 Core

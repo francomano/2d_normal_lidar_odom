@@ -1,0 +1,15 @@
+[ 13%] Built target icp
+[ 26%] Built target ros_bridge
+[ 46%] Built target nicp
+[ 60%] Built target tracker
+[ 73%] Built target normal_tracker
+[ 86%] Built target lidar_icp_node
+[35m[1mScanning dependencies of target lidar_nicp_node[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/lidar_nicp_node.dir/bin/lidar_nicp_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_nicp_node[0m
+/usr/bin/ld: CMakeFiles/lidar_nicp_node.dir/bin/lidar_nicp_node.cpp.o: in function `scan_callback(boost::shared_ptr<sensor_msgs::LaserScan_<std::allocator<void> > const> const&)':
+lidar_nicp_node.cpp:(.text+0x16e): undefined reference to `NormalScanTracker::publishState(ros::Time)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/lidar_nicp_node.dir/build.make:109: /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_nicp_node] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:205: CMakeFiles/lidar_nicp_node.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

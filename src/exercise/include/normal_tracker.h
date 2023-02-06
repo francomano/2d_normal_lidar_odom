@@ -26,6 +26,14 @@ class NormalScanTracker {
   Eigen::Isometry2f _X_keyframe_in_map, _X_moving_in_keyframe;
 
   // TODO: Might need to add some variables
+  float _keyframe_max_dist;
+  float _keyframe_max_rot;
+  ContainerType _scan_key;
+  Eigen::Isometry2f NormalFrameToKFOdometry(Eigen::Isometry2f iso);
+  //ROS
+  std::string _frame_id;
+  ros::Publisher _pub_odom;
+  tf2_ros::TransformBroadcaster _tf_br;
 
   // Viz related stuff
   std::vector<Eigen::Vector2f> _keyframe_pos_vect;

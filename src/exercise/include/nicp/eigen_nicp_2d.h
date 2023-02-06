@@ -47,6 +47,8 @@ class NICP {
   void optimizeCorrespondences();
 
   void run(int max_iterations);
+  const Eigen::Isometry2f& X() const { return _X; } //added
+  Eigen::Isometry2f& X() { return _X; }//added
 
  protected:
   const ContainerType& _fixed_original;

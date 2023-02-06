@@ -1,0 +1,8 @@
+In file included from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/lidar_icp_node.cpp:9[m[K:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/normal_tracker.h:32:21:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KNormalScanTracker::[m[K’ on member ‘[01m[KNormalFrameToKFOdometry[m[K’ [[01;31m[K-fpermissive[m[K]
+   32 |   Eigen::Isometry2f [01;31m[KNormalScanTracker[m[K::NormalFrameToKFOdometry(Eigen::Isometry2f iso);
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/lidar_icp_node.dir/build.make:63: CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/lidar_icp_node.dir/all] Errore 2
+make[1]: *** Attesa per i processi non terminati....
+make: *** [Makefile:141: all] Errore 2

@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_od
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/lidar_nicp_node.dir/all
 all: CMakeFiles/lidar_icp_node.dir/all
 all: CMakeFiles/normal_tracker.dir/all
 all: CMakeFiles/icp.dir/all
@@ -69,6 +70,7 @@ preinstall: gtest/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/lidar_nicp_node.dir/clean
 clean: CMakeFiles/lidar_icp_node.dir/clean
 clean: CMakeFiles/normal_tracker.dir/clean
 clean: CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
@@ -192,6 +194,36 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/lidar_nicp_node.dir
+
+# All Build rule for target.
+CMakeFiles/lidar_nicp_node.dir/all: CMakeFiles/normal_tracker.dir/all
+CMakeFiles/lidar_nicp_node.dir/all: CMakeFiles/icp.dir/all
+CMakeFiles/lidar_nicp_node.dir/all: CMakeFiles/ros_bridge.dir/all
+CMakeFiles/lidar_nicp_node.dir/all: CMakeFiles/nicp.dir/all
+	$(MAKE) -f CMakeFiles/lidar_nicp_node.dir/build.make CMakeFiles/lidar_nicp_node.dir/depend
+	$(MAKE) -f CMakeFiles/lidar_nicp_node.dir/build.make CMakeFiles/lidar_nicp_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=13,14 "Built target lidar_nicp_node"
+.PHONY : CMakeFiles/lidar_nicp_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lidar_nicp_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lidar_nicp_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles 0
+.PHONY : CMakeFiles/lidar_nicp_node.dir/rule
+
+# Convenience name for target.
+lidar_nicp_node: CMakeFiles/lidar_nicp_node.dir/rule
+
+.PHONY : lidar_nicp_node
+
+# clean rule for target.
+CMakeFiles/lidar_nicp_node.dir/clean:
+	$(MAKE) -f CMakeFiles/lidar_nicp_node.dir/build.make CMakeFiles/lidar_nicp_node.dir/clean
+.PHONY : CMakeFiles/lidar_nicp_node.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/lidar_icp_node.dir
 
 # All Build rule for target.
@@ -229,7 +261,7 @@ CMakeFiles/normal_tracker.dir/all: CMakeFiles/ros_bridge.dir/all
 CMakeFiles/normal_tracker.dir/all: CMakeFiles/nicp.dir/all
 	$(MAKE) -f CMakeFiles/normal_tracker.dir/build.make CMakeFiles/normal_tracker.dir/depend
 	$(MAKE) -f CMakeFiles/normal_tracker.dir/build.make CMakeFiles/normal_tracker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=16,17 "Built target normal_tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=18,19 "Built target normal_tracker"
 .PHONY : CMakeFiles/normal_tracker.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1741,7 +1773,7 @@ CMakeFiles/icp.dir/clean:
 CMakeFiles/ros_bridge.dir/all:
 	$(MAKE) -f CMakeFiles/ros_bridge.dir/build.make CMakeFiles/ros_bridge.dir/depend
 	$(MAKE) -f CMakeFiles/ros_bridge.dir/build.make CMakeFiles/ros_bridge.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=18,19 "Built target ros_bridge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=20,21 "Built target ros_bridge"
 .PHONY : CMakeFiles/ros_bridge.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1796,7 +1828,7 @@ CMakeFiles/tracker.dir/all: CMakeFiles/icp.dir/all
 CMakeFiles/tracker.dir/all: CMakeFiles/ros_bridge.dir/all
 	$(MAKE) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/depend
 	$(MAKE) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=20,21 "Built target tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=22,23 "Built target tracker"
 .PHONY : CMakeFiles/tracker.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1823,7 +1855,7 @@ CMakeFiles/tracker.dir/clean:
 CMakeFiles/nicp.dir/all: CMakeFiles/icp.dir/all
 	$(MAKE) -f CMakeFiles/nicp.dir/build.make CMakeFiles/nicp.dir/depend
 	$(MAKE) -f CMakeFiles/nicp.dir/build.make CMakeFiles/nicp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=13,14,15 "Built target nicp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mf/Scrivania/2d_normal_lidar_odom/build/normal_lidar_odometry/CMakeFiles --progress-num=15,16,17 "Built target nicp"
 .PHONY : CMakeFiles/nicp.dir/all
 
 # Build rule for subdir invocation for target.

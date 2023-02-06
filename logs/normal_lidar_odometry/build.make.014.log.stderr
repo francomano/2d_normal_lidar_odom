@@ -1,0 +1,51 @@
+In file included from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:1[m[K:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/normal_tracker.h:32:21:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KNormalScanTracker::[m[K’ on member ‘[01m[KNormalFrameToKFOdometry[m[K’ [[01;31m[K-fpermissive[m[K]
+   32 |   Eigen::Isometry2f [01;31m[KNormalScanTracker[m[K::NormalFrameToKFOdometry(Eigen::Isometry2f iso);
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/lidar_icp_node.cpp:9[m[K:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/normal_tracker.h:32:21:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KNormalScanTracker::[m[K’ on member ‘[01m[KNormalFrameToKFOdometry[m[K’ [[01;31m[K-fpermissive[m[K]
+   32 |   Eigen::Isometry2f [01;31m[KNormalScanTracker[m[K::NormalFrameToKFOdometry(Eigen::Isometry2f iso);
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:[m[K In member function ‘[01m[Kvoid NormalScanTracker::process(const ContainerType&)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:35:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass NICP[m[K’ has no member named ‘[01m[KX[m[K’; did you mean ‘[01m[KEigen::Isometry2f NICP::_X[m[K’? (not accessible from this context)
+   35 |   Eigen::Isometry2f X=NormalFrameToKFOdometry(solver.[01;31m[KX[m[K());
+      |                                                      [01;31m[K^[m[K
+In file included from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:8[m[K:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/nicp/eigen_nicp_2d.h:55:21:[m[K [01;36m[Knote: [m[Kdeclared protected here
+   55 |   Eigen::Isometry2f [01;36m[K_X[m[K = Eigen::Isometry2f::Identity();
+      |                     [01;36m[K^~[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:[m[K In member function ‘[01m[KEigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(Eigen::Isometry2f)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:49:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_keyframe_max_t[m[K’ was not declared in this scope; did you mean ‘[01m[K_keyframe_max_rot[m[K’?
+   49 |     if (delta_t > [01;31m[K_keyframe_max_t[m[K || delta_r > _keyframe_max_rot)
+      |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                   [32m[K_keyframe_max_rot[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:50:9:[m[K [01;31m[Kerror: [m[K‘[01m[KX_keyframe_in_map[m[K’ was not declared in this scope; did you mean ‘[01m[K_X_keyframe_in_map[m[K’?
+   50 |         [01;31m[KX_keyframe_in_map[m[K = X_keyframe_in_map * X_moving_in_keyframe;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |         [32m[K_X_keyframe_in_map[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:50:49:[m[K [01;31m[Kerror: [m[K‘[01m[KX_moving_in_keyframe[m[K’ was not declared in this scope; did you mean ‘[01m[K_X_moving_in_keyframe[m[K’?
+   50 |         X_keyframe_in_map = X_keyframe_in_map * [01;31m[KX_moving_in_keyframe[m[K;
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                 [32m[K_X_moving_in_keyframe[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[KX_moving_in_keyframe[m[K’ was not declared in this scope; did you mean ‘[01m[K_X_moving_in_keyframe[m[K’?
+   51 |         [01;31m[KX_moving_in_keyframe[m[K.setIdentity();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[K_X_moving_in_keyframe[m[K
+make[2]: *** [CMakeFiles/lidar_icp_node.dir/build.make:63: CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/lidar_icp_node.dir/all] Errore 2
+make[1]: *** Attesa per i processi non terminati....
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:366[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/normal_tracker.h:5[m[K,
+                 from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:1[m[K:
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of ‘[01m[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<double, 2, 2>; Src = Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 2, false>; Func = Eigen::internal::assign_op<double, float>][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:732:41:[m[K   required from ‘[01m[KDerived& Eigen::PlainObjectBase<Derived>::_set_noalias(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 2, false>; Derived = Eigen::Matrix<double, 2, 2>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:537:7:[m[K   required from ‘[01m[KEigen::PlainObjectBase<Derived>::PlainObjectBase(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 2, false>; Derived = Eigen::Matrix<double, 2, 2>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:377:29:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::EigenBase<OtherDerived>&) [with OtherDerived = Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 2, false>; _Scalar = double; int _Rows = 2; int _Cols = 2; int _Options = 0; int _MaxRows = 2; int _MaxCols = 2][m[K’
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:47:62:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:834:3:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_MIXED_DIFFERENT_NUMERIC_TYPES__YOU_NEED_TO_USE_THE_CAST_METHOD_OF_MATRIXBASE_TO_CAST_NUMERIC_TYPES_EXPLICITLY
+  834 |   [01;31m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K(Func,typename ActualDstTypeCleaned::Scalar,typename Src::Scalar);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/normal_tracker.dir/build.make:63: CMakeFiles/normal_tracker.dir/src/normal_tracker.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/normal_tracker.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

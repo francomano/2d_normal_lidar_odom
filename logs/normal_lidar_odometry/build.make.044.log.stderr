@@ -1,0 +1,7 @@
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:[m[K In member function ‘[01m[KEigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(Eigen::Isometry2f)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:51:21:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kreturn[m[K’
+   51 |     float delta_r = [01;31m[Kreturn[m[K atan2(s, c);
+      |                     [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/normal_tracker.dir/build.make:63: CMakeFiles/normal_tracker.dir/src/normal_tracker.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/normal_tracker.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

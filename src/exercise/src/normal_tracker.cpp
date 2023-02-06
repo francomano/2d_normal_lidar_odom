@@ -3,7 +3,7 @@
 #include <visualization_msgs/MarkerArray.h>
 
 #include <iostream>
-
+#include <cmath>
 #include "constants.h"
 #include "nicp/eigen_nicp_2d.h"
 #include "ros_bridge.h"
@@ -15,14 +15,50 @@ NormalScanTracker::NormalScanTracker(ros::NodeHandle& nh_,
                                      float keyframe_max_dist_,
                                      float keyframe_max_rot_)
     : _X_keyframe_in_map(Eigen::Isometry2f::Identity()),
-      _X_moving_in_keyframe(Eigen::Isometry2f::Identity()) {
+      _X_moving_in_keyframe(Eigen::Isometry2f::Identity()), 
+      _keyframe_max_dist(keyframe_max_dist_),
+      _keyframe_max_rot(keyframe_max_rot_),
+      _frame_id(frame_id_){
   _pub_viz = nh_.advertise<visualization_msgs::MarkerArray>("/info", 10);
+  _pub_odom = nh_.advertise<nav_msgs::Odometry>(topic_odom_, 10);
 }
 
 // TODO (Look at README.md and tracker.cpp)
-void NormalScanTracker::process(const ContainerType& scan_) { return; }
+void NormalScanTracker::process(const ContainerType& scan_) { 
+  if (_scan_key.size() == 0) {
+    _scan_key = scan_;
+    return;
+  }
+
+  NICP solver(_scan_key, scan_, 4);
+  solver.run(100);
+
+  Eigen::Isometry2f iso=solver.X();
+  Eigen::Isometry2f X=NormalFrameToKFOdometry(iso);
+
+  _X_keyframe_in_map = X;
+
+  _scan_key = scan_;
+ }
 
 // TODO Might need to add some functions (Look at README.md and tracker.cpp)
+Eigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(Eigen::Isometry2f iso) {
+    _X_moving_in_keyframe = iso;
+
+    float delta_t = _X_moving_in_keyframe.translation().norm();
+    Eigen::Transform<float, 2, 1>::LinearPart linear=_X_moving_in_keyframe.linear();
+    Eigen::Matrix2f R=linear.matrix();
+    float c = R(0, 0);
+    float s = R(0, 1);
+    float delta_r = atan2(s, c);
+    
+
+    if (delta_t > _keyframe_max_dist || delta_r > _keyframe_max_rot)
+        _X_keyframe_in_map = _X_keyframe_in_map * _X_moving_in_keyframe;
+        _X_moving_in_keyframe.setIdentity();
+
+    return _X_keyframe_in_map * _X_moving_in_keyframe;
+}
 
 void NormalScanTracker::publishKeyframe(const Eigen::Isometry2f keyframe_) {
   _keyframe_pos_vect.push_back(keyframe_.translation());
@@ -84,4 +120,16 @@ void NormalScanTracker::publishKeyframe(const Eigen::Isometry2f keyframe_) {
   msg.markers.push_back(keyframe_nodes);
   msg.markers.push_back(keyframe_lines);
   _pub_viz.publish(msg);
+}
+void NormalScanTracker::publishState(ros::Time t_) {   //this function was added but it needs mod
+  geometry_msgs::TransformStamped tf_msg;
+  nav_msgs::Odometry odom_msg;
+
+  isometry2transformStamped(_X_keyframe_in_map, tf_msg, FRAME_WORLD, _frame_id,
+                            t_);
+  transformStamped2odometry(tf_msg, odom_msg);
+
+  publishKeyframe(_X_keyframe_in_map);
+  _pub_odom.publish(odom_msg);
+  _tf_br.sendTransform(tf_msg);
 }

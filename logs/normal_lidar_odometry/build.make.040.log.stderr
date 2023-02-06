@@ -1,0 +1,11 @@
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:[m[K In member function ‘[01m[KEigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(Eigen::Isometry2f)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:51:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kfloat[m[K’
+   51 |     [01;31m[Kfloat[m[K delta_r=0;
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:54:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelta_r[m[K’ was not declared in this scope; did you mean ‘[01m[Kdelta_t[m[K’?
+   54 |     if (delta_t > _keyframe_max_dist || [01;31m[Kdelta_r[m[K > _keyframe_max_rot)
+      |                                         [01;31m[K^~~~~~~[m[K
+      |                                         [32m[Kdelta_t[m[K
+make[2]: *** [CMakeFiles/normal_tracker.dir/build.make:63: CMakeFiles/normal_tracker.dir/src/normal_tracker.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/normal_tracker.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

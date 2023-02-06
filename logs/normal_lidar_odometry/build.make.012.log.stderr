@@ -1,0 +1,31 @@
+In file included from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/bin/lidar_icp_node.cpp:9[m[K:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/normal_tracker.h:32:21:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KNormalScanTracker::[m[K’ on member ‘[01m[KNormalFrameToKFOdometry[m[K’ [[01;31m[K-fpermissive[m[K]
+   32 |   Eigen::Isometry2f [01;31m[KNormalScanTracker[m[K::NormalFrameToKFOdometry(Eigen::Isometry2f iso);
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:1[m[K:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/normal_tracker.h:32:21:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KNormalScanTracker::[m[K’ on member ‘[01m[KNormalFrameToKFOdometry[m[K’ [[01;31m[K-fpermissive[m[K]
+   32 |   Eigen::Isometry2f [01;31m[KNormalScanTracker[m[K::NormalFrameToKFOdometry(Eigen::Isometry2f iso);
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:[m[K In member function ‘[01m[Kvoid NormalScanTracker::process(const ContainerType&)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:35:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass NICP[m[K’ has no member named ‘[01m[KX[m[K’; did you mean ‘[01m[KEigen::Isometry2f NICP::_X[m[K’? (not accessible from this context)
+   35 |   Eigen::Isometry2f X=NormalFrameToKFOdometry(solver.[01;31m[KX[m[K());
+      |                                                      [01;31m[K^[m[K
+In file included from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:8[m[K:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/nicp/eigen_nicp_2d.h:55:21:[m[K [01;36m[Knote: [m[Kdeclared protected here
+   55 |   Eigen::Isometry2f [01;36m[K_X[m[K = Eigen::Isometry2f::Identity();
+      |                     [01;36m[K^~[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:[m[K In member function ‘[01m[KEigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(Eigen::Isometry2f)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[KX_moving_in_keyframe[m[K’ was not declared in this scope; did you mean ‘[01m[K_X_moving_in_keyframe[m[K’?
+   44 |     [01;31m[KX_moving_in_keyframe[m[K = iso;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[K_X_moving_in_keyframe[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:53:12:[m[K [01;31m[Kerror: [m[K‘[01m[KX_keyframe_in_map[m[K’ was not declared in this scope; did you mean ‘[01m[K_X_keyframe_in_map[m[K’?
+   53 |     return [01;31m[KX_keyframe_in_map[m[K * X_moving_in_keyframe;
+      |            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |            [32m[K_X_keyframe_in_map[m[K
+make[2]: *** [CMakeFiles/lidar_icp_node.dir/build.make:63: CMakeFiles/lidar_icp_node.dir/bin/lidar_icp_node.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/lidar_icp_node.dir/all] Errore 2
+make[1]: *** Attesa per i processi non terminati....
+make[2]: *** [CMakeFiles/normal_tracker.dir/build.make:63: CMakeFiles/normal_tracker.dir/src/normal_tracker.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/normal_tracker.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2
