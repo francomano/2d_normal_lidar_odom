@@ -1,0 +1,12 @@
+[ 13%] Built target icp
+[ 26%] Built target ros_bridge
+[35m[1mScanning dependencies of target nicp[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.o[0m
+[ 46%] Built target tracker
+[ 60%] Built target lidar_icp_node
+[ 66%] [32m[1mLinking CXX shared library /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libnicp.so[0m
+[ 73%] Built target nicp
+[ 80%] [32m[1mLinking CXX shared library /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/libnormal_tracker.so[0m
+[ 86%] Built target normal_tracker
+[ 93%] [32m[1mLinking CXX executable /home/mf/Scrivania/2d_normal_lidar_odom/devel/lib/normal_lidar_odometry/lidar_nicp_node[0m
+[100%] Built target lidar_nicp_node

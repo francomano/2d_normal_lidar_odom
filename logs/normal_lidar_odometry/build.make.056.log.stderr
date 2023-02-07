@@ -1,0 +1,11 @@
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/eigen_nicp_2d.cpp:[m[K In constructor ‘[01m[KNICP::NICP(const ContainerType&, const ContainerType&, int)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/eigen_nicp_2d.cpp:15:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KNICP[m[K’ does not have any field named ‘[01m[K_kd_tree[m[K’
+   15 |     [01;31m[K_kd_tree[m[K(_fixed.begin(), _fixed.end(), min_points_in_leaf){}
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/eigen_nicp_2d.cpp:[m[K In member function ‘[01m[Kvoid NICP::computeCorrespondences()[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/nicp/eigen_nicp_2d.cpp:36:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_kd_tree[m[K’ was not declared in this scope
+   36 |         auto ft = [01;31m[K_kd_tree[m[K.bestMatchFast(mt, _ball_radius);
+      |                   [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/nicp.dir/build.make:63: CMakeFiles/nicp.dir/src/nicp/eigen_nicp_2d.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:1857: CMakeFiles/nicp.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2
