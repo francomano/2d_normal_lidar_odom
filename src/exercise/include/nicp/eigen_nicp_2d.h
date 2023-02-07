@@ -63,4 +63,7 @@ class NICP {
   float _chi2_sum = 0;
   Eigen::Matrix<float, 3, 1> _dx;
   // TODO
+  using TreeNodeType = TreeNode_<typename ContainerType::iterator>;
+  TreeNodeType _kd_tree;
+  void computeCorrespondences();
 };
