@@ -1,0 +1,18 @@
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:[m[K In member function ‘[01m[Kvoid NormalScanTracker::process(const ContainerType&)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:39:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::cout[m[K’?
+   39 |   [01;31m[Kcout[m[K<<_X_keyframe_in_map<<;
+      |   [01;31m[K^~~~[m[K
+      |   [32m[Kstd::cout[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/time.h:54[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/normal_tracker.h:2[m[K,
+                 from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:1[m[K:
+[01m[K/usr/include/c++/9/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+   61 |   extern ostream [01;36m[Kcout[m[K;  /// Linked to standard output
+      |                  [01;36m[K^~~~[m[K
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:39:29:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+   39 |   cout<<_X_keyframe_in_map<<[01;31m[K;[m[K
+      |                             [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/normal_tracker.dir/build.make:63: CMakeFiles/normal_tracker.dir/src/normal_tracker.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:263: CMakeFiles/normal_tracker.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

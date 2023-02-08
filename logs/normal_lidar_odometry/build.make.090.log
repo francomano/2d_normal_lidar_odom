@@ -1,0 +1,7 @@
+[ 13%] Built target icp
+[ 26%] Built target ros_bridge
+[ 46%] Built target nicp
+[ 60%] Built target tracker
+[ 73%] Built target normal_tracker
+[ 86%] Built target lidar_icp_node
+[100%] Built target lidar_nicp_node
