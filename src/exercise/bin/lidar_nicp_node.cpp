@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
 
   // TODO: Create a new NormalScanTracker
   // tracker_ptr = ...;
-  tracker_ptr = std::make_shared<NormalScanTracker>(nh, FRAME_LASER, TOPIC_ODOM,2.0,0.5);
+  tracker_ptr = std::make_shared<NormalScanTracker>(nh, FRAME_LASER, TOPIC_ODOM,2.0,0.001);
   // TODO: Subscribe to the topic scan and register scan_callback as message
   ros::Subscriber scan_subscriber = nh.subscribe(TOPIC_SCAN, 10, scan_callback);
   // callback

@@ -29,7 +29,6 @@ void NormalScanTracker::process(const ContainerType& scan_) {
     _scan_key = scan_;
     return;
   }
-
   NICP solver(_scan_key, scan_, 4);
   solver.run(100);
 
@@ -37,7 +36,11 @@ void NormalScanTracker::process(const ContainerType& scan_) {
   Eigen::Isometry2f X=NormalFrameToKFOdometry(iso);
 
   _X_keyframe_in_map = X;
-
+  /*
+  std::cout<<"X matrix: "<<std:endl;
+  std::cout<<X(0,0)<<X(0,1)<<std:endl;
+  std::cout<<X(1,0)<<X(1,1)<<std::endl;
+   */
   _scan_key = scan_;
  }
 
@@ -51,9 +54,12 @@ Eigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(Eigen::Isometry2f i
     float c = R(0, 0);
     float s = R(0, 1);
     float delta_r = atan2(s, c);
-    
+    std::cout<<delta_r<<std::endl;
+    std::cout<<_keyframe_max_dist<<std::endl;
+
 
     if (delta_t > _keyframe_max_dist || delta_r > _keyframe_max_rot)
+        std::cout<<"inside the if"<<std::endl;
         _X_keyframe_in_map = _X_keyframe_in_map * _X_moving_in_keyframe;
         _X_moving_in_keyframe.setIdentity();
 
@@ -129,7 +135,7 @@ void NormalScanTracker::publishState(ros::Time t_) {   //this function was added
                             t_);
   transformStamped2odometry(tf_msg, odom_msg);
 
-  publishKeyframe(_X_keyframe_in_map);
+  publishKeyframe(_X_keyframe_in_map);      //added
   _pub_odom.publish(odom_msg);
   _tf_br.sendTransform(tf_msg);
 }
