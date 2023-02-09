@@ -29,7 +29,7 @@ class NormalScanTracker {
   float _keyframe_max_dist;
   float _keyframe_max_rot;
   ContainerType _scan_key;
-  Eigen::Isometry2f NormalFrameToKFOdometry(Eigen::Isometry2f iso,const ContainerType& scan_);
+  Eigen::Isometry2f NormalFrameToKFOdometry(Eigen::Isometry2f iso);
   //ROS
   std::string _frame_id;
   ros::Publisher _pub_odom;
