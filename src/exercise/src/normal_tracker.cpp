@@ -52,10 +52,11 @@ Eigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(Eigen::Isometry2f i
     std::cout<<"rotation: "<<delta_r<<std::endl;
 
 
-    if (delta_t > _keyframe_max_dist || delta_r > _keyframe_max_rot)
+    if (delta_t > _keyframe_max_dist || delta_r > _keyframe_max_rot) {
         _X_keyframe_in_map = _X_keyframe_in_map * _X_moving_in_keyframe;
         _X_moving_in_keyframe.setIdentity();
-	    _scan_key=scan_; //update only if there is enough overlap
+        _scan_key = scan_; //update only if there is enough overlap
+    }
 
     return _X_keyframe_in_map * _X_moving_in_keyframe;
 }
