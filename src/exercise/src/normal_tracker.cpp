@@ -3,7 +3,6 @@
 #include <visualization_msgs/MarkerArray.h>
 
 #include <iostream>
-#include <cmath>
 #include "constants.h"
 #include "nicp/eigen_nicp_2d.h"
 #include "ros_bridge.h"
@@ -29,33 +28,31 @@ void NormalScanTracker::process(const ContainerType& scan_) {
     _scan_key = scan_;
     return;
   }
-  NICP solver(_scan_key, scan_, 4);
-  solver.run(100);
+  _X_moving_in_keyframe = _X_moving_in_keyframe * NormalFrameToKFOdometry(scan_);
+  _scan_key = scan_;
 
-  Eigen::Isometry2f iso=solver.X();
-  Eigen::Isometry2f X=NormalFrameToKFOdometry(iso,scan_);
-
-  _X_keyframe_in_map = X;
  }
 
 // TODO Might need to add some functions (Look at README.md and tracker.cpp)
-Eigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(Eigen::Isometry2f iso,const ContainerType& scan_) {
-    _X_moving_in_keyframe = iso;
+Eigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(const ContainerType& scan_) {
+    NICP solver(_scan_key, scan_, 4);
+    solver.X() = _X_moving_in_keyframe;  //set the initial guess
+    solver.run(100);
+    _X_moving_in_keyframe = solver.X();
 
     float delta_t = _X_moving_in_keyframe.translation().norm();
     Eigen::Transform<float, 2, 1>::LinearPart linear=_X_moving_in_keyframe.linear();
     Eigen::Matrix2f R=linear.matrix();
     float c = R(0, 0);
     float s = R(0, 1);
-    float delta_r = atan2(s, c);
+    float delta_r = fabs(atan2(s, c));
     std::cout<<"traslation: "<<delta_t<<std::endl;
     std::cout<<"rotation: "<<delta_r<<std::endl;
-
 
     if (delta_t > _keyframe_max_dist || delta_r > _keyframe_max_rot) {
         _X_keyframe_in_map = _X_keyframe_in_map * _X_moving_in_keyframe;
         _X_moving_in_keyframe.setIdentity();
-        _scan_key = scan_; //update only if there is enough overlap
+        std::cout<<"update"<<std::endl;
     }
 
     return _X_keyframe_in_map * _X_moving_in_keyframe;

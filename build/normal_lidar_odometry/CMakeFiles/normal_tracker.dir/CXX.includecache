@@ -69,8 +69,6 @@ visualization_msgs/MarkerArray.h
 -
 iostream
 -
-cmath
--
 constants.h
 /home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/constants.h
 nicp/eigen_nicp_2d.h
