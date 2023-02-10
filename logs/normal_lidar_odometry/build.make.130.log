@@ -1,0 +1,18 @@
+[ 13%] Built target icp
+[ 26%] Built target ros_bridge
+[ 46%] Built target nicp
+[ 60%] Built target tracker
+[35m[1mScanning dependencies of target normal_tracker[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/normal_tracker.dir/src/normal_tracker.cpp.o[0m
+[ 80%] Built target lidar_icp_node
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:[m[K In member function ‘[01m[KEigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(const ContainerType&)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:41:12:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::Isometry2f NICP::_X[m[K’ is protected within this context
+   41 |     solver.[01;31m[K_X[m[K = _X_moving_in_keyframe;
+      |            [01;31m[K^~[m[K
+In file included from [01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:7[m[K:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/include/nicp/eigen_nicp_2d.h:57:21:[m[K [01;36m[Knote: [m[Kdeclared protected here
+   57 |   Eigen::Isometry2f [01;36m[K_X[m[K = Eigen::Isometry2f::Identity();
+      |                     [01;36m[K^~[m[K
+make[2]: *** [CMakeFiles/normal_tracker.dir/build.make:63: CMakeFiles/normal_tracker.dir/src/normal_tracker.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:263: CMakeFiles/normal_tracker.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

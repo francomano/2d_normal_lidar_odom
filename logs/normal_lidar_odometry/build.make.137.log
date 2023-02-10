@@ -1,0 +1,15 @@
+[ 13%] Built target icp
+[ 26%] Built target ros_bridge
+[ 46%] Built target nicp
+[ 60%] Built target tracker
+[35m[1mScanning dependencies of target normal_tracker[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/normal_tracker.dir/src/normal_tracker.cpp.o[0m
+[ 80%] Built target lidar_icp_node
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:[m[K In member function ‘[01m[Kvoid NormalScanTracker::process(const ContainerType&)[m[K’:
+[01m[K/home/mf/Scrivania/2d_normal_lidar_odom/src/exercise/src/normal_tracker.cpp:32:3:[m[K [01;31m[Kerror: [m[K‘[01m[KNormalFrameToKDOdometry[m[K’ was not declared in this scope; did you mean ‘[01m[KNormalFrameToKFOdometry[m[K’?
+   32 |   [01;31m[KNormalFrameToKDOdometry[m[K(scan_);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[KNormalFrameToKFOdometry[m[K
+make[2]: *** [CMakeFiles/normal_tracker.dir/build.make:63: CMakeFiles/normal_tracker.dir/src/normal_tracker.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:263: CMakeFiles/normal_tracker.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2
