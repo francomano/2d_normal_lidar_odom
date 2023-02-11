@@ -28,9 +28,7 @@ void NormalScanTracker::process(const ContainerType& scan_) {
     _scan_key = scan_;
     return;
   }
-  _X_moving_in_keyframe = _X_moving_in_keyframe * NormalFrameToKFOdometry(scan_);
-  _scan_key = scan_;
-
+  NormalFrameToKFOdometry(scan_);
  }
 
 // TODO Might need to add some functions (Look at README.md and tracker.cpp)
@@ -52,10 +50,11 @@ Eigen::Isometry2f NormalScanTracker::NormalFrameToKFOdometry(const ContainerType
     if (delta_t > _keyframe_max_dist || delta_r > _keyframe_max_rot) {
         _X_keyframe_in_map = _X_keyframe_in_map * _X_moving_in_keyframe;
         _X_moving_in_keyframe.setIdentity();
+	_scan_key = scan_;
         std::cout<<"update"<<std::endl;
     }
 
-    return _X_keyframe_in_map * _X_moving_in_keyframe;
+    return _X_keyframe_in_map * _X_moving_in_keyframe;  //return X_moving_in_map
 }
 
 void NormalScanTracker::publishKeyframe(const Eigen::Isometry2f keyframe_) {
